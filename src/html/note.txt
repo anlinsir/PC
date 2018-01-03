@@ -1,0 +1,6 @@
+register=>注册页面
+login=>登录
+list商品列表
+detail商品详情
+car 购物车
+confirm确认订单页面
