@@ -4,3 +4,6 @@ list商品列表
 detail商品详情
 car 购物车
 confirm确认订单页面
+
+
+git push --set-upstream git@github.com:anlinsir/PC.git master
