@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["lode"],function(){})});

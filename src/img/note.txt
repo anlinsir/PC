@@ -1,0 +1,7 @@
+loop:
+
+1  http://static.21cake.com//upload/images/0824dc1af8cb021f1e034c009449f6bb.jpg
+2  http://static.21cake.com//upload/images/d79efb8c10f53de158295294120aea9e.jpg
+3  http://static.21cake.com//upload/images/3854814e3e0437cf9bbe542a9d85ab59.jpg
+
+end
