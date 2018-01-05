@@ -1,0 +1,41 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+					{
+						"id":1,
+						"price":298,
+						"title":"百利甜情人",
+						"more":"爱尔兰百利甜酒,新西兰奶油",
+						"tag":["聚会 >","新品 >","人气 >"],
+						"img":"img/index_ajax_5.png"
+					},
+					{
+						"id":2,
+						"price":198,
+						"title":"芒果奶油蛋糕",
+						"more":"坚持应季鲜切芒果",
+						"tag":["童趣 >","聚会 >","新品 >"],
+						"img":"img/index_ajax_6.png"
+						
+					},
+					{
+						"id":3,
+						"price":155,
+						"title":"卡百利",
+						"more":"今日凌晨采摘，追着草莓的奶油蛋糕",
+						"tag":["情侣 >","聚会 >","新品 >","买赠 >"],
+						"img":"img/index_ajax_7.png"
+					},
+					{
+						"id":4,
+						"price":499,
+						"title":"黑白巧克力慕斯",
+						"more":"口感冰凉细腻",
+						"tag":["情侣 >","人气 >"],
+						"img":"img/index_ajax_8.png"
+					}
+				]
+	}
+}

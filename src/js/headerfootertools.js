@@ -1,6 +1,6 @@
 //定义模块  载入 header和footer的文件
-define(["jquery","cookie","index"],function($){
-	$.ajax("html/include/header.html").done(function(data){
+define(["jquery","cookie"],function($){
+	$.ajax("/html/include/header.html").done(function(data){
 		$("header").html(data)
 	}).done(function(){
 		var user = $.cookie("loginuser")
@@ -13,7 +13,7 @@ define(["jquery","cookie","index"],function($){
 	
 	
 	
-	$.ajax("html/include/footer.html").done(function(data){
+	$.ajax("/html/include/footer.html").done(function(data){
 		$("footer").html(data)
 	}).done(function(){
 		$(".footer-img li:nth-child(3) a").mouseenter(function(){

@@ -1,0 +1,41 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+		"data":[
+					{
+						"id":1,
+						"price":298,
+						"title":"枣儿",
+						"more":"红枣奶油戚风与姜撞奶慕斯",
+						"tag":["聚会 >","新品 >"],
+						"img":"img/index_img_one.png"
+					},
+					{
+						"id":2,
+						"price":268,
+						"title":"平安夜",
+						"more":"松子口味的巧克力谷物脆",
+						"tag":["情侣 >","聚会 >","新品 >"],
+						"img":"img/index_ajax_two.png"
+						
+					},
+					{
+						"id":3,
+						"price":135,
+						"title":"黑森林",
+						"more":"智利车厘子浸入樱桃白兰地",
+						"tag":["情侣 >","聚会 >","新品 >","买赠 >"],
+						"img":"img/index_ajax_there.png"
+					},
+					{
+						"id":4,
+						"price":399,
+						"title":"平安夜",
+						"more":"松子口味的巧克力谷物脆",
+						"tag":["聚会 >","新品 >"],
+						"img":"img/index_ajax_four.png"
+					}
+				]
+	}
+}
