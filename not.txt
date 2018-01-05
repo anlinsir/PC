@@ -1,0 +1,5 @@
+git  上传问题  git ssh 不成功时
+用
+git push --set-upstream git@github.com:anlinsir/PC.git master
+
+pc / pc2
