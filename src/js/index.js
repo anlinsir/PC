@@ -1,5 +1,8 @@
 require(["config"],function(){
 	require(["lode","loop"],function(){
+	$.cookie.json =true;
+	
+	
 	
 		//轮播图的设置
 		$(".loop").eq(0).carousel({

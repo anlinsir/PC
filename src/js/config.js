@@ -10,6 +10,9 @@ require.config({
 	shim : {
 		"loop" : {
 			deps : ["jquery"]
+		},
+		"cookie" : {
+			deps : ["jquery"]
 		}
 		
 	}

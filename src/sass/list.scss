@@ -1,0 +1,49 @@
+.main{
+    margin-top: 100px;
+   
+    
+    .list_top_nav{
+        width: 1262px;
+         border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin: 0 20px;
+        .change{
+            color: #d5bfa7;
+        }
+        ul{
+          display: flex;
+        margin-top: 10px;
+          
+          li{
+              list-style: none;
+              margin: 0 15px;
+              >a{
+                  color: #684029;
+                  font-size: 12px;
+                  text-decoration: none;
+              }
+             
+              a:hover{
+                  color: #d5bfa7;
+              }
+          }
+          li:nth-child(1){
+              margin-right: 40px;
+              
+                  color: #d3b980;
+                  font-size: 14px;
+              
+          }
+        }
+        .list_coll1{
+          
+        }
+        
+    }
+    
+    
+    
+}

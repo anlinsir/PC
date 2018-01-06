@@ -1,5 +1,6 @@
 //定义模块  载入 header和footer的文件
 define(["jquery","cookie"],function($){
+	$.cookie.json =true;
 	$.ajax("/html/include/header.html").done(function(data){
 		$("header").html(data)
 	}).done(function(){
@@ -8,6 +9,27 @@ define(["jquery","cookie"],function($){
 			$(".loginuser").html("<a href='/PC/src/html/car.html'>"+ user +"</a>")
 			$(".register").hide()
 		}
+	}).done(function(){
+			var html = "";
+			var html2 = "";
+		var _users = $.cookie("users")
+		html = `<a href="/index.html"><span class="loginuser">${_users.username}</span></a>`;
+		html2 = `<a href="javascript:void(0)"><span class="register">/退出</span></a>`
+		if(_users){
+			$(".loginuser").html(html)
+			
+			$(".register").html(html2)
+		}
+	}).done(function(){
+		$(".register").click(function(){
+			var _users = $.cookie("users")
+			if(_users){
+				$.cookie("users","",{expires:-1,path:"/"})
+				var html = `<a href="html/login.html"><span class="loginuser">登录</span></a><a href="html/register.html"><span class="register">/注册</span></a>`
+				$(".ul2 li:nth:child(2)").html(html)
+			}
+			
+		})
 	})
 	
 	
