@@ -9,6 +9,11 @@ define(["jquery","cookie"],function($){
 			$(".loginuser").html("<a href='/PC/src/html/car.html'>"+ user +"</a>")
 			$(".register").hide()
 		}
+		var cookier = $.cookie("product")
+	/*	console.log(cookier)
+		$(".small_img").html(cookier.length)*/
+		
+		
 	}).done(function(){
 			var html = "";
 			var html2 = "";

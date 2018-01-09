@@ -11,6 +11,17 @@ header{
     z-index: 999;
     justify-content: space-between;
     background: url(../img/header_bottom.png) no-repeat bottom center;
+    .small_img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        background: #bb9772;
+    }
 }
 
 

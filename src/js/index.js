@@ -35,7 +35,7 @@ require(["config"],function(){
 							<a href="#">${elements.tag[0]}</a>
 							<a href="#">${elements.tag[1]}</a>
 							<a href="#">${elements.tag[2] || "more"}</a>
-							<a href="#">${elements.tag[3] || "more"}</a>
+							<a href="/html/detail.html">${elements.tag[3] || "more"}</a>
 							
 							</div>						
 							<div class="hr"></div>						

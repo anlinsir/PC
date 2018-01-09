@@ -65,7 +65,29 @@ require(["config"],function(){
 						type : "GET",
 						datatype:"json",
 						success:function(data){
-							console.log(data)
+							data = JSON.parse(data)
+							var _status = data.message
+							console.log(_status)
+								if(_status == 1){
+									$(".mark1").html("已存在的用户名")
+									$(".mark1").show()	
+											//数据库
+																
+								
+								}else if(_status == 0){
+										var urls = 							`http://10.7.187.127/PC/pc.php?username=${user}&password=${pass}&email=${ema}&phone=${ph}`;
+							//			console.log(user,pass,ema,ph)
+										$.ajax({
+											url: urls,
+											type: "GET",
+											datatype:"json",
+											success:function(data){
+									
+											}
+										}).done(function(){
+											location = "/html/login.html"
+										});
+								}
 							
 						}
 					})
@@ -75,17 +97,7 @@ require(["config"],function(){
 					
 
 					
-							//数据库
-						var urls = 				`http://10.7.187.127/PC/pc.php?username=${user}&password=${pass}&email=${ema}&phone=${ph}`;
-		//			console.log(user,pass,ema,ph)
-					$.ajax({
-						url: urls,
-						type: "GET",
-						datatype:"json",
-						success:function(data){
-
-						}
-					});				
+										
 				}
 				/**/
 				

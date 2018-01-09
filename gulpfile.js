@@ -28,7 +28,6 @@ gulp.task("js", function(){
 		.pipe(babel({
 			presets : ["es2015"]
 		}))
-		.pipe(uglify())
 		.pipe(gulp.dest("dist/js"))
 		.pipe(connect.reload());
 });
