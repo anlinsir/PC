@@ -1,4 +1,5 @@
 .conb { min-height: 458px; overflow: hidden; margin-top: 75px; }
+.conb .input-group { margin-bottom: 20px; }
 .conb .row { overflow: hidden; width: 100%; min-height: 600px; background: url("../img/register_and_login_background_img.jpg") no-repeat 40% 40%; }
 .conb .row .move { height: 500px; margin-left: 700px; margin-top: 50px; }
 .conb .row .form-control { background: none; }

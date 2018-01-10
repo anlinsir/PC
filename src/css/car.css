@@ -1,4 +1,9 @@
 .main { margin-top: 100px; }
+.main .submit { width: 1200px; height: 300px; margin: 0 auto; border: 1px solid; }
+.main .submit .right { height: 300px; width: 400px; border: 1px solid; float: right; padding: 10px 10px; box-sizing: border-box; }
+.main .submit .right .r_top { height: 200px; border-bottom: 2px solid #bbb; display: flex; flex-direction: column; justify-content: space-around; }
+.main .submit .right .r_bottom { height: 100px; display: flex; justify-content: center; align-items: center; }
+.main .submit .right .r_bottom > a { display: block; width: 200px; height: 30px; color: white; text-align: center; line-height: 30px; text-decoration: none; background-color: #643e28; }
 .main .car_nav { margin: 0 auto; width: 1200px; height: 45px; border: 1px solid #bbb; line-height: 45px; color: #643e28; background-color: #eae0d4; display: flex; justify-content: space-around; }
 .main .car_nav li { list-style: none; }
 .main .car_body { width: 1200px; margin: 0 auto; border: 1px solid #aaa; padding: 0 30px; box-sizing: border-box; min-height: 100px; margin-top: 30px; position: relative; margin-bottom: 100px; }

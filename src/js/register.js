@@ -54,7 +54,7 @@ require(["config"],function(){
 				}else{
 						$(".mark2").show()
 				}
-				//判断多选是否已经选上
+				
 				
 				if(usert(user) && passt(pass)){
 					

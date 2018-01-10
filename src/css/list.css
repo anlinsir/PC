@@ -6,13 +6,13 @@
 .main .list_top_nav ul li > a { color: #684029; font-size: 12px; text-decoration: none; }
 .main .list_top_nav ul li a:hover { color: #d5bfa7; }
 .main .list_top_nav ul li:nth-child(1) { margin-right: 40px; color: #d3b980; font-size: 14px; }
-.main .listcontainer { display: flex; justify-content: space-around; }
-.main .listcontainer .list_con { text-align: center; }
+.main .listcontainer { display: flex; justify-content: flex-start; flex-wrap: wrap; padding: 0 80px; }
+.main .listcontainer .list_con { margin: 30px 10px; text-align: center; }
 .main .listcontainer .list_con li { list-style: none; }
-.main .listcontainer .list_con .list_more { color: #616161; border: 1px solid #bb9772; display: inline-block; border-radius: 5px; font-size: 12px; margin: 5px 0; }
+.main .listcontainer .list_con .list_more { color: #616161; border: 1px solid #bb9772; display: inline-block; border-radius: 5px; font-size: 12px; margin: 5px 0; padding: 0 3px; }
 .main .listcontainer .list_con .list_price { color: #bb9772; }
 .main .listcontainer .list_con .list_title { color: #643e28; }
 .main .listcontainer .list_con .list_title:hover { color: #d5bfa7; }
-.main .listcontainer .list_con .list_img { text-align: center; }
+.main .listcontainer .list_con .list_img { text-align: center; cursor: pointer; }
 .main .listcontainer .list_con .list_img img { width: 200px; height: 200px; }
 .main .listcontainer .list_con .list_btn > a { text-decoration: none; line-height: 28px; display: block; margin-top: 10px; width: 100px; height: 30px; margin-left: 150px; border: 1px solid white; background-color: #643e28; color: white; font-size: 12px; }

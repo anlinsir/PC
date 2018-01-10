@@ -1,5 +1,46 @@
 .main{
     margin-top: 100px;
+    .submit{
+        width: 1200px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid;
+
+       
+        .right{
+            height: 300px;
+            width: 400px;
+            border: 1px solid;
+            float: right;
+        padding: 10px 10px;
+            
+             box-sizing: border-box;
+            .r_top{
+                height: 200px;
+                border-bottom:2px solid #bbb ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .r_bottom{
+                height: 100px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                >a{
+                   
+                    display: block;
+                    width: 200px;
+                    height: 30px;
+                    color: white;
+                    text-align: center;
+                    line-height: 30px;
+                    text-decoration: none;
+                    background-color: #643e28;
+                }
+            }
+        }
+    }
     
     .car_nav{
         margin: 0 auto;

@@ -22,7 +22,6 @@ define(["jquery", "cookie"], function ($) {
 		html2 = "<a href=\"javascript:void(0)\"><span class=\"register\">/\u9000\u51FA</span></a>";
 		if (_users) {
 			$(".loginuser").html(html);
-
 			$(".register").html(html2);
 		}
 	}).done(function () {
@@ -33,6 +32,7 @@ define(["jquery", "cookie"], function ($) {
 				var html = "<a href=\"html/login.html\"><span class=\"loginuser\">\u767B\u5F55</span></a><a href=\"html/register.html\"><span class=\"register\">/\u6CE8\u518C</span></a>";
 				$(".ul2 li:nth:child(2)").html(html);
 			}
+			location = "/index.html";
 		});
 	});
 

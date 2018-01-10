@@ -1,8 +1,8 @@
 "use strict";
 
 require(["config"], function () {
-	require(["lode", "cookie"], function () {
-
+	require(["lode", "cookie", "fly"], function () {
+		$.cookie.json = true;
 		$(".list_top_nav li").delegate("a", "click", function () {
 			$(this).addClass("change");
 		});
@@ -59,10 +59,8 @@ require(["config"], function () {
 				var index = exist(_products.id, productss);
 				if (index == -1) {
 					productss.push(_products);
-					console.log("aa");
 				} else {
 					productss[index].amount++;
-					console.log("abbb");
 				}
 
 				$.cookie("product", productss, { expires: 30, path: "/" });
@@ -78,6 +76,50 @@ require(["config"], function () {
 
 					return idx;
 				}
+
+				//运动动作
+				var flyer = $("<img src=\"" + _img + "\">");
+				flyer.fly({
+					start: {
+						left: event.pageX,
+						top: event.pageY
+					},
+					end: {
+						left: $(window).width() - 50,
+						top: 50,
+						width: 0,
+						height: 0
+					}
+				});
+			});
+		}).done(function () {
+			$(".listcontainer").on("click", ".list_img", function () {
+				var _id = $(this).siblings(".proid").html();
+				var idurl = "http://10.7.187.127/PC/check.php?id=" + _id;
+				$.ajax({
+					url: idurl,
+					type: "GET",
+					datatype: "json",
+					success: function success(data) {
+						data = JSON.parse(data);
+						data = data.data;
+						console.log(data);
+						var _products = {};
+						$.each(data, function (index, elements) {
+							_products = {
+								id: elements.id,
+								img: elements.img,
+								more: elements.more,
+								price: elements.price,
+								title: elements.title
+							};
+						});
+						console.log(_products);
+						$.cookie("productsInList", _products, { expires: 2, path: "/" });
+
+						location = "/html/detail.html";
+					}
+				});
 			});
 		});
 	});
